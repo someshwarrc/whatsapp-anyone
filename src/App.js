@@ -20,15 +20,13 @@ function App() {
     <div className={"container"}>
       <img src={WhatsAppLogo} width="200" alt="whatsapp logo" />
       <div className="header-text">
-        Fed up with <span className="decorate">saving</span> the phone number
-        everytime you want to WhatsApp someone?
+        Fed up with <span className="decorate">saving</span> a phone number
+        everytime you want to WhatsApp someone,{" "}
+        <span className="decorate">just once</span>?
       </div>
       <div className="header-text">
-        Well you <span className="decorate">don't</span> need to save any
-        numbers anymore!
-      </div>
-      <div className="head-text">
-        Whatsapp <span className="decorate">without</span> saving numbers
+        Well you <span className="decorate">don't</span> have to save any
+        numbers!
       </div>
       <form
         onSubmit={(e) => redirect(e, codes[name], phone)}

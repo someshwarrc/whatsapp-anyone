@@ -16,7 +16,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #36454f;
+  text-align: center;
+  background-color: #435a64;
 }
 
 .form-wrapper {
@@ -38,8 +39,12 @@
 
 option {
   color: white;
-  background: #36454f;
+  background: rgba(67, 90, 100, 0.5);
   font-size: 1rem;
+}
+
+.header-text {
+  font-size: 1em;
 }
 
 .code-number {
@@ -49,7 +54,7 @@ option {
 }
 
 .decorate {
-  font-size: 1.3rem;
+  font-size: 1.3em;
   color: red;
   font-weight: 700;
 }
@@ -77,12 +82,12 @@ option {
 button {
   cursor: pointer;
   font-size: 0.8rem;
-  padding: 0.1rem 0.5rem;
   font-weight: 700;
-  width: 200px;
   align-self: center;
-  background: transparent;
+  background: #128c7e;
   border-radius: 10px;
+  border: none;
+  outline: none;
 }
 
 button:hover {
@@ -92,6 +97,8 @@ button:hover {
 @media (max-width: 450px) {
   .form-wrapper {
     width: 95vw;
+    height: auto;
+    padding: 1rem 0;
   }
 
   option {

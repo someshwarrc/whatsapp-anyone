@@ -1,5 +1,6 @@
 import "./App.css";
 import codes from "./CountryCodes.js";
+import WhatsAppLogo from "./WhatsApp_Logo.png";
 import React from "react";
 
 function App() {
@@ -17,18 +18,23 @@ function App() {
   };
   return (
     <div className={"container"}>
-      <div>
+      <img src={WhatsAppLogo} width="200" alt="whatsapp logo" />
+      <div className="header-text">
         Fed up with <span className="decorate">saving</span> the phone number
         everytime you want to WhatsApp someone?
       </div>
-      <p>
-        Well you <span className="decorate">don't</span> need to save anymore!
-      </p>
+      <div className="header-text">
+        Well you <span className="decorate">don't</span> need to save any
+        numbers anymore!
+      </div>
+      <div className="head-text">
+        Whatsapp <span className="decorate">without</span> saving numbers
+      </div>
       <form
         onSubmit={(e) => redirect(e, codes[name], phone)}
         className={"form-wrapper"}
       >
-        <label htmlFor="country">Country</label>
+        <label htmlFor="country">Select Country</label>
         <select
           value={name}
           onChange={(e) => {
@@ -60,7 +66,13 @@ function App() {
             placeholder="Enter number without extension.."
           />
         </div>
-        <button>WHATSAPP NOW</button>
+        <button>
+          <img
+            src="https://www.freepnglogos.com/uploads/paper-plane-png/paper-plane-paper-planes-aircraft-send-image-pixabay-5.png"
+            width="64"
+            alt="Whatsapp number!"
+          />
+        </button>
       </form>
     </div>
   );
